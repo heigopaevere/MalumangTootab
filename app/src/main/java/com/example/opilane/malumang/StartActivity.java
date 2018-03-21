@@ -1,5 +1,6 @@
 package com.example.opilane.malumang;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,19 +17,20 @@ public class StartActivity extends AppCompatActivity {
     EditText nimi1, nimi2;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
-    Animation animation ()
 
-    ImageView uno, dos;
+    ImageView lets, go;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.blink);
-        uno.startAnimation(animation1);
-        dos.startAnimation(animation1);
+        lets = findViewById(R.id.lets);
+        go = findViewById(R.id.go);
+        Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.blink);
+        lets.startAnimation(animation1);
+        go.startAnimation(animation1);
 
-        nimi1 = findViewById(R.id.mangija1);
+        nimi1 = findViewById(R.id.mangja1);
         nimi2 = findViewById(R.id.mangija2);
         alusta = findViewById(R.id.mangi);
         sharedPreferences = getSharedPreferences("nimed", MODE_PRIVATE);
@@ -36,6 +38,9 @@ public class StartActivity extends AppCompatActivity {
         alusta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                alusta();
+                Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                startActivity(intent);
 
             }
         });

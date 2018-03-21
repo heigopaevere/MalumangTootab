@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Malumang.iml" filepath="$PROJECT_DIR$/Malumang.iml" />
+      <module fileurl="file://C:\Users\opilane\AndroidStudioProjects\Malumang3updated\Malumang.iml" filepath="C:\Users\opilane\AndroidStudioProjects\Malumang3updated\Malumang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Malumang3updated.iml" filepath="$PROJECT_DIR$/Malumang3updated.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
